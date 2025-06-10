@@ -1,7 +1,13 @@
-version: 0.0.1
+version: 0.0.2
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: poetry add pandas
   bootstrap: |
     npm install
     poetry install --no-root
+name: markdown-to-html
+description: Markdown to HTML Parser
+displayName: Markdown to HTML
+repository: https://github.com/oomol-blocks/markdown-to-html
+icon: ./icon.png
+releaseNotes: add icon
