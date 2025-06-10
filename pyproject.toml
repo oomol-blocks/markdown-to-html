@@ -1,0 +1,21 @@
+[project]
+name = "markdown-to-html"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "qianzhu",email = "36325249+syt-honey@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "typing-extensions (>=4.14.0,<5.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+packages = [{include = "markdown_to_html", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
