@@ -1,31 +1,6 @@
 nodes:
-  - node_id: +typescript#1
-    title: "TypeScript #1"
-    icon: ":skill-icons:typescript:"
-    task:
-      ui:
-        default_width: 450
-      inputs_def:
-        - handle: markdownText
-          description: Input
-          json_schema:
-            type: string
-            ui:widget: text
-        - handle: wrapWithHtml
-          json_schema:
-            type: boolean
-        - handle: defaultStyle
-          json_schema:
-            type: boolean
-      outputs_def:
-        - handle: htmlText
-          description: Output
-          json_schema:
-            type: string
-      executor:
-        name: nodejs
-        options:
-          entry: scriptlets/+scriptlet#1.ts
+  - node_id: markdown-to-html#1
+    task: self::markdown-to-html
     inputs_from:
       - handle: wrapWithHtml
         value: true

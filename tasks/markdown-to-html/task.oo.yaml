@@ -1,0 +1,28 @@
+ui:
+  default_width: 450
+inputs_def:
+  - handle: markdownText
+    description: Input
+    json_schema:
+      type: string
+      ui:widget: text
+  - handle: wrapWithHtml
+    json_schema:
+      type: boolean
+  - handle: defaultStyle
+    json_schema:
+      type: boolean
+outputs_def:
+  - handle: htmlText
+    description: Output
+    json_schema:
+      type: string
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+    spawn: false
+icon: ":twemoji:cactus:"
+title: Markdown to HTML
+description: Markdown to HTML
+timeout: 180000
