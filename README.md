@@ -171,9 +171,8 @@ The parser processes Markdown elements in a specific order to avoid conflicts:
 - `processTables()` - Complete table processing with alignment
 - Individual processors for each Markdown element
 
-### Utility Dependencies
+### Utility Functions
 
-Requires utility functions from `./utils`:
 - `validateAndCleanInput()` - Input validation and sanitization
 - `escapeHtml()` - HTML character escaping
 - `wrapWithHtmlDocument()` - HTML document wrapper
