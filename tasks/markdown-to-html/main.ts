@@ -23,6 +23,11 @@ export default async function(
         
         const htmlOutput = wrapWithHtml ? wrapWithHtmlDocument(htmlContent, defaultStyle) : htmlContent;
 
+        context.preview({
+            type: "html",
+            data: htmlOutput
+        })
+
         return { htmlText: htmlOutput };
     } catch (error) {
         console.error('Markdown conversion failed:', error);
